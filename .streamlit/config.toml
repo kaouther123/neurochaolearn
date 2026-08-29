@@ -6,6 +6,6 @@ enableXsrfProtection = false
 [theme]
 base = "light"
 primaryColor = "#9B4D96"
-backgroundColor = "#FBF7FC"
-secondaryBackgroundColor = "#F2E6F3"
+backgroundColor = "#FCF8FC"
+secondaryBackgroundColor = "#F3E8F2"
 textColor = "#2D2430"
