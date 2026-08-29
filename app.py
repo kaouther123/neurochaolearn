@@ -25,6 +25,27 @@ st.markdown("""
     margin-top: 10px; font-size: 14px;
 }
 .block-container { padding-top: 2rem; }
+/* Barre du titre */
+.title-box {
+    background: linear-gradient(135deg, #6F356D, #A85AA3);
+    padding: 25px 35px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(111, 53, 109, 0.20);
+}
+
+.title-box h1 {
+    color: white !important;
+    margin: 0;
+    font-size: 42px;
+}
+
+.title-box p {
+    color: #F8EAF7 !important;
+    margin-top: 8px;
+    font-size: 16px;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -42,9 +63,14 @@ st.sidebar.caption("NeuroChaoLearn v0.2 — Conference prototype")
 # ══════════════════════════════════════════════════════════════════
 if page == "Simulation":
 
-    st.title("🧠 NeuroChaoLearn")
-    st.caption("Interactive platform for teaching chaotic systems in neuroscience")
-    st.divider()
+    st.markdown("""
+<div class="title-box">
+    <h1>🧠 NeuroChaoLearn</h1>
+    <p>Interactive platform for teaching chaotic systems in neuroscience</p>
+</div>
+""", unsafe_allow_html=True)
+
+st.divider()
 
     with st.sidebar:
         st.header("Simulation parameters")
